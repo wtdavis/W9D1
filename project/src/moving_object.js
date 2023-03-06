@@ -9,8 +9,6 @@ constructor (pos, vel, radius, color) {
 }
 
  draw(ctx) {
-    
-        
         // const centerX = canvas.width/2;
         // const centerY = canvas.height/2;
 
@@ -24,6 +22,11 @@ constructor (pos, vel, radius, color) {
 
 
     };
+
+move (ctx) {
+    this.pos[0] += vel[0]
+    this.pos[1] += vel[1]
+} 
     
     
 
