@@ -8,30 +8,30 @@ constructor (pos, vel, radius, color) {
     this.color = color
 }
 
-draw() {
-    document.addEventListener("DOMContentLoaded", function(){
-        const canvas = document.getElementById("canvas");
-        const ctx = canvas.getContext("2d")  ; 
-        const centerX = canvas.width/2;
-        const centerY = canvas.height/2;
+ draw(ctx) {
+    
+        
+        // const centerX = canvas.width/2;
+        // const centerY = canvas.height/2;
+
         ctx.beginPath()
-        ctx.arc(centerX, centerY, this.radius, 0, 2 * Math.PI, false);
-        ctx.fillStyle = this.color;
+        ctx.arc(100, 100, 20, 0, 2 * Math.PI, false);
+        ctx.fillStyle = "red";
         ctx.fill();
         ctx.lineWidth = 5;
         ctx.strokeStyle = "#003300";
         ctx.stroke()
 
 
-    });
+    };
     
     
 
 }
+// document.addEventListener("DOMContentLoaded", function(){
 
 
 
-}
 
 
 export default MovingObject
